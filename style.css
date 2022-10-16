@@ -1,0 +1,212 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style-type: none;
+}
+
+html, body{
+    min-height: 100vh;
+}
+
+
+body{
+   background-image: url("imagens/fundolivros.jpg");
+   display: flex;
+   flex-direction: column;
+  
+   
+}
+
+.texto{
+    color: white
+    
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    background-color:black;
+    color: white;
+    min-height: 100px;
+    padding: 10px;
+    font-family: "garamond";
+    font-weight: bolder;
+    
+   
+}
+
+h1{
+    margin-left: 50px;
+}
+h1:hover{
+    -webkit-transform:scale(1.5) ;
+    color: rgb(233, 229, 19);
+}
+.buscar{
+   display: grid;
+   grid-template-columns: 500px 100px;
+   min-height: 80px;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   
+   
+}
+
+input{
+
+    min-width: 400px;
+    min-height: 30px;
+    grid-column: 1/2;
+    border-radius: 50px;
+    background-color: #d0e4ae;
+    font-size: 20px;
+    text-align: center;
+    
+   
+    
+    
+    
+}
+
+button{
+
+    min-width: 80px;
+    min-height: 30px;
+    grid-column: 2/2;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 5px solid #136497;
+  
+    
+
+}
+
+button:hover{
+background-color: grey;
+-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+.principal{
+
+    display: grid;
+    justify-content: center;
+    flex-grow: 1;
+  
+}
+
+
+.bloco{
+
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    background-color: blue;;
+    margin: 0 0 10px 0;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 30px;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: bolder;
+    color: rgb(233, 229, 19);
+    
+        
+}
+
+.bloco:hover{
+   
+    background-color: rgb(10, 93, 187);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    border: 10px solid #136497;
+   
+    
+}
+
+.organizar{
+
+    text-align: center;
+}
+
+.livro{
+    text-align: center;
+    grid-column: 1/1;
+    grid-row: 1/ span 2;
+}
+
+
+
+img{
+
+    background-color: white;
+}
+
+.imagensDisplay{
+
+    border-radius: 200px;
+    max-width: 200px;
+   
+    
+}
+
+
+.rodape{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    min-height: 100px;
+    gap:20px
+    
+    
+}
+.imagemfim{
+   
+    max-width: 20px;
+}
+
+.imagemfim:hover{
+    -webkit-transform:scale(1.5) ;
+    background-color: rgb(233, 229, 19);
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .cabecalho{
+        justify-content: center;
+    }
+   
+     .buscar{
+            display: flex;
+            flex-wrap: wrap;
+    }
+
+     input{
+
+            min-width: 50rm;
+            margin-top: 30px;         
+    }
+    
+  
+    
+    .bloco{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 30px;
+     
+        
+        
+        
+            
+    }
+    
+    }
+
+
